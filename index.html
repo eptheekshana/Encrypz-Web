@@ -1,13 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Encrypz | Your Cloud. Your Keys. Zero Compromise.</title>
-  <meta name="description"
-    content="Encrypz is a zero-knowledge encryption vault that secures your files inside your browser before they ever touch the cloud." />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <title>Encrypz - Zero Compromise Encryption</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,114 +13,63 @@
 </head>
 
 <body>
-  <!-- Navigation -->
+
+  <!-- Floating Nav -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-container">
+    <div class="nav-content">
       <a href="#" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          <path d="m9 12 2 2 4-4"></path>
-        </svg>
+        <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+          style="height: 32px; width: auto; border-radius: 4px;" />
         <span class="logo-text">Encrypz</span>
       </a>
       <div class="nav-links">
-        <a href="#problem">The Problem</a>
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#security">Security Model</a>
+        <a href="#security">Security</a>
       </div>
-      <div class="nav-cta">
-        <a href="#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+      <div class="nav-actions">
+        <a href="#" class="nav-login">Log In</a>
+        <a href="#" class="btn-glow">Sign Up</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero section">
-    <div class="hero-bg-elements">
-      <div class="glow-orb orb-1"></div>
-      <div class="glow-orb orb-2"></div>
-      <div class="hero-grid-overlay"></div>
-    </div>
-    <div class="container hero-container relative-z">
-      <h1 class="hero-title fade-in-up">Your Cloud.<br /><span>Your Keys.</span><br />Zero Compromise.</h1>
-      <p class="hero-subtitle fade-in-up" style="animation-delay: 0.1s;">
-        Encrypz is a zero-knowledge encryption vault that secures your files inside your browser before they ever
-        touch the cloud. Keep using Google Drive and OneDrive without sacrificing your privacy.
-      </p>
-
-      <div class="hero-form fade-in-up" style="animation-delay: 0.4s;">
-        <form class="waitlist-form" id="hero-waitlist">
-          <input type="email" placeholder="Enter your email address" required class="form-input" />
-          <button type="submit" class="btn btn-primary">Get Early Access</button>
-        </form>
-        <p class="waitlist-subtext">Join privacy-conscious users on the waitlist. Zero spam.</p>
+  <!-- Massive Hero -->
+  <header class="hero">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="hero-container">
+      <div class="badge-new">
+        <span class="badge-dot"></span> New: Network Drive Integration
       </div>
-
-      <div class="hero-visual fade-in-up" style="animation-delay: 0.2s;">
-        <div class="encryption-anim-wrapper">
-          <div class="anim-scene">
-            <div class="anim-path"></div>
-
-            <div class="anim-cloud">
-              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-              </svg>
-            </div>
-
-            <div class="anim-lock">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-              </svg>
-            </div>
-
-            <div class="anim-file">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-            </div>
-
-            <div class="anim-cipher">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                <rect x="9" y="9" width="6" height="6"></rect>
-                <line x1="9" y1="1" x2="9" y2="4"></line>
-                <line x1="15" y1="1" x2="15" y2="4"></line>
-                <line x1="9" y1="20" x2="9" y2="23"></line>
-                <line x1="15" y1="20" x2="15" y2="23"></line>
-                <line x1="20" y1="9" x2="23" y2="9"></line>
-                <line x1="20" y1="14" x2="23" y2="14"></line>
-                <line x1="1" y1="9" x2="4" y2="9"></line>
-                <line x1="1" y1="14" x2="4" y2="14"></line>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <h1 class="hero-headline fade-in-up">
+        Your Cloud.<br />
+        <span class="text-gradient">Your Keys.</span><br />
+        Zero Compromise.
+      </h1>
+      <p class="hero-subline fade-in-up">
+        Encrypz is a zero-knowledge encryption vault that secures your files inside your browser before they ever touch
+        the cloud.
+      </p>
+      <div class="hero-cta-group fade-in-up">
+        <a href="#vault" class="btn-primary">Get Started</a>
+        <a href="https://github.com/encrypz" target="_blank" class="btn-secondary">View on GitHub</a>
       </div>
     </div>
   </header>
 
-  <!-- The Problem Section -->
-  <section id="problem" class="section bg-light">
+  <!-- Problem / Value (Asymmetrical Bento) -->
+  <section class="section" id="problem">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <h2 class="section-title">Cloud Storage is Convenient. <span>It Isn't Private.</span></h2>
-        <p class="section-description">Traditional cloud storage leaves your most sensitive data vulnerable to scanning,
-          breaches, and third-party access.</p>
+      <div class="section-heading">
+        <h2 class="section-title">Cloud storage is convenient. <span class="text-muted">It isn't private.</span></h2>
+        <p class="section-desc">Traditional cloud storage leaves your data vulnerable to scanning, breaches, and
+          third-party access.</p>
       </div>
 
-      <div class="grid-3 problem-grid">
-        <div class="card shadow-card fade-in-up" style="animation-delay: 0.1s;">
+      <div class="bento-grid">
+        <!-- Big Card -->
+        <div class="bento-card col-span-2 row-span-2 card-glow">
           <div class="card-icon warning">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -131,12 +78,20 @@
               </path>
             </svg>
           </div>
-          <h3 class="card-title">They Hold the Keys</h3>
-          <p class="card-text">Cloud providers encrypt your data on their servers, meaning they hold the decryption keys
-            and can scan, analyze, or hand over your files at any time.</p>
+          <h3>They Hold The Keys</h3>
+          <p>Cloud providers encrypt your data on their servers. They hold the decryption keys and can scan, analyze, or
+            hand over your files at any time.</p>
+          <div class="card-visual">
+            <div class="mock-ui">
+              <div class="mock-line"></div>
+              <div class="mock-line short"></div>
+              <div class="mock-alert">Decryption keys exposed on provider server</div>
+            </div>
+          </div>
         </div>
 
-        <div class="card shadow-card fade-in-up" style="animation-delay: 0.2s;">
+        <!-- Small Card 1 -->
+        <div class="bento-card card-glow">
           <div class="card-icon warning">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -145,12 +100,13 @@
               <path d="m9 9 6 6"></path>
             </svg>
           </div>
-          <h3 class="card-title">Centralized Breaches</h3>
-          <p class="card-text">When cloud servers are breached, your plaintext data is compromised. Relying on
-            provider-side security creates a massive single point of failure.</p>
+          <h3>Centralized Breaches</h3>
+          <p>When cloud servers are breached, your plaintext data is compromised. It creates a massive single point of
+            failure.</p>
         </div>
 
-        <div class="card shadow-card fade-in-up" style="animation-delay: 0.3s;">
+        <!-- Small Card 2 -->
+        <div class="bento-card card-glow">
           <div class="card-icon warning">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -159,74 +115,25 @@
               <path d="M12 8v8"></path>
             </svg>
           </div>
-          <h3 class="card-title">Complex, Clunky Tools</h3>
-          <p class="card-text">Traditional encryption software requires heavy desktop installs, complicated key
-            management, or forcing you to move away from your existing cloud ecosystem.</p>
+          <h3>Complex Tools</h3>
+          <p>Heavy desktop installs and complicated key management are a thing of the past.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Value Proposition Section -->
-  <section id="value-prop" class="section">
+  <!-- Core Features -->
+  <section class="section" id="features">
     <div class="container">
-      <div class="grid-2" style="align-items: center;">
-        <div class="fade-in-up">
-          <h2 class="section-title">Your Privacy, <span>Guaranteed.</span></h2>
-          <p class="section-description" style="text-align: left; margin-bottom: 2.5rem; max-width: 100%;">
-            Encrypz bridges the gap between the convenience of modern cloud storage and the absolute security of local
-            cryptography.
-          </p>
-
-          <div style="margin-bottom: 2rem;">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">What We Do For You</h3>
-            <p>We seamlessly encrypt your files inside your browser <strong>before</strong> they are ever uploaded to
-              your cloud provider. You get a secure, organized vault without needing to install complex desktop
-              software.</p>
-          </div>
-
-          <div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Why It Matters</h3>
-            <p>Cloud breaches and unauthorized data scanning happen every day. By encrypting your data locally, even if
-              your cloud provider is completely compromised, your files remain mathematically unreadable to hackers,
-              corporations, and governments.</p>
-          </div>
-        </div>
-
-        <div class="fade-in-up" style="animation-delay: 0.2s;">
-          <div class="shadow-card"
-            style="background-color: var(--bg-color-alt); text-align: center; padding: 3rem 2rem;">
-            <div
-              style="width: 80px; height: 80px; background: #FFFFFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-sm);">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <path d="M8 11a4 4 0 1 1 8 0c0 1.57-.88 3-2 4"></path>
-                <path d="M12 15v2"></path>
-              </svg>
-            </div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">The Zero-Trust Model</h3>
-            <p style="color: var(--text-muted); font-size: 1.05rem;">In a zero-trust architecture, you don't need to
-              trust the cloud provider, the network, or even us. You only need to trust the math.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Features Section -->
-  <section id="features" class="section bg-light">
-    <div class="container">
-      <div class="section-header fade-in-up">
-        <h2 class="section-title">Security That <span>Never Leaves Your Device</span></h2>
-        <p class="section-description">Advanced cryptography executed entirely within your browser, putting you in
-          absolute control.</p>
+      <div class="section-heading">
+        <h2 class="section-title">Security That <span class="text-gradient">Never Leaves Your Device</span></h2>
+        <p class="section-desc">Advanced cryptography executed entirely within your browser.</p>
       </div>
 
-      <div class="grid-2 features-grid">
+      <div class="bento-grid features-grid">
         <!-- Feature 1 -->
-        <div class="feature-item fade-in-up">
-          <div class="feature-icon primary">
+        <div class="bento-card feature">
+          <div class="card-icon success">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
@@ -237,32 +144,26 @@
               <path d="M7 14v.01"></path>
             </svg>
           </div>
-          <div class="feature-content">
-            <h3 class="feature-title">100% Zero-Knowledge</h3>
-            <p class="feature-text">We never see your password, keys, or files. Cryptographic execution happens entirely
-              on your local machine, in-browser.</p>
-          </div>
+          <h3>100% Zero-Knowledge</h3>
+          <p>We never see your password, keys, or files. Executed entirely on your local machine.</p>
         </div>
 
         <!-- Feature 2 -->
-        <div class="feature-item fade-in-up" style="animation-delay: 0.1s;">
-          <div class="feature-icon success">
+        <div class="bento-card feature">
+          <div class="card-icon success">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
             </svg>
           </div>
-          <div class="feature-content">
-            <h3 class="feature-title">AES-256-GCM Encryption</h3>
-            <p class="feature-text">Dynamic in-memory encryption that protects data confidentiality and instantly
-              detects tampering through authenticated encryption.</p>
-          </div>
+          <h3>AES-256-GCM</h3>
+          <p>Dynamic in-memory encryption that protects data confidentiality and instantly detects tampering.</p>
         </div>
 
         <!-- Feature 3 -->
-        <div class="feature-item fade-in-up" style="animation-delay: 0.2s;">
-          <div class="feature-icon primary">
+        <div class="bento-card feature">
+          <div class="card-icon success">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -270,177 +171,127 @@
               </path>
             </svg>
           </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Argon2id Key Derivation</h3>
-            <p class="feature-text">Computational passphrase stretching that transforms simple master passwords into
-              uncrackable cryptographic keys resisting GPU attacks.</p>
-          </div>
+          <h3>Argon2id Key Derivation</h3>
+          <p>Computational passphrase stretching that resists GPU attacks.</p>
         </div>
 
         <!-- Feature 4 -->
-        <div class="feature-item fade-in-up" style="animation-delay: 0.3s;">
-          <div class="feature-icon success">
+        <div class="bento-card feature">
+          <div class="card-icon success">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
             </svg>
           </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Native Cloud Integration</h3>
-            <p class="feature-text">Direct OAuth integration with Google Drive and OneDrive without middleman backend
-              servers reading your data in transit.</p>
-          </div>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="feature-item fade-in-up" style="animation-delay: 0.4s;">
-          <div class="feature-icon primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 16 12 12 8 16"></polyline>
-              <line x1="12" x2="12" y1="12" y2="21"></line>
-              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
-              <polyline points="16 16 12 12 8 16"></polyline>
-            </svg>
-          </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Large File Streaming</h3>
-            <p class="feature-text">Powered by the Web Streams API to encrypt gigabyte-sized files smoothly in browser
-              memory without crashing or lagging.</p>
-          </div>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="feature-item fade-in-up" style="animation-delay: 0.5s;">
-          <div class="feature-icon success">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" x2="22" y1="12" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-              </path>
-            </svg>
-          </div>
-          <div class="feature-content">
-            <h3 class="feature-title">Zero Downloads Required</h3>
-            <p class="feature-text">Fully browser-based. Access your encrypted vault instantly from any modern web
-              browser without installing any heavy desktop clients.</p>
-          </div>
+          <h3>Native Cloud Integration</h3>
+          <p>Direct OAuth integration with Google Drive and OneDrive without backend middleman servers.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works Section -->
-  <section id="how-it-works" class="section bg-light">
+  <!-- How It Works (Stacked Vertical) -->
+  <section class="section" id="how-it-works">
     <div class="container">
-      <div class="section-header fade-in-up">
-        <h2 class="section-title">Effortless Privacy in <span>Three Simple Steps</span></h2>
-        <p class="section-description">We handle the complex cryptography so you can focus on getting work done.</p>
+      <div class="section-heading">
+        <h2 class="section-title">Effortless Privacy in <span class="text-gradient">Three Steps</span></h2>
       </div>
 
-      <div class="steps-container">
-        <div class="step-line"></div>
-
-        <!-- Step 1 -->
-        <div class="step-item fade-in-up">
-          <div class="step-number">1</div>
-          <div class="step-content shadow-card">
-            <h3 class="step-title">Connect</h3>
-            <p class="step-text">Authenticate directly with your cloud provider (e.g., Google Drive) via secure OAuth
-              2.0. No middleman involved.</p>
+      <div class="stacked-steps">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Connect</h3>
+            <p>Authenticate directly with your cloud provider via secure OAuth 2.0. No middleman involved.</p>
           </div>
         </div>
-
-        <!-- Step 2 -->
-        <div class="step-item fade-in-up" style="animation-delay: 0.2s;">
-          <div class="step-number">2</div>
-          <div class="step-content shadow-card">
-            <h3 class="step-title">Lock</h3>
-            <p class="step-text">Set your master password. Encrypz derives your local keys using Argon2id in a
-              background Web Worker, ensuring main thread performance.</p>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Lock</h3>
+            <p>Set your master password. Encrypz derives your local keys using Argon2id in a background Web Worker.</p>
           </div>
         </div>
-
-        <!-- Step 3 -->
-        <div class="step-item fade-in-up" style="animation-delay: 0.4s;">
-          <div class="step-number">3</div>
-          <div class="step-content shadow-card highlight-border">
-            <h3 class="step-title">Encrypt & Sync</h3>
-            <p class="step-text">Drop files into your vault. Encrypz chunks, encrypts, and obfuscates filenames locally
-              before streaming ciphertext directly to your cloud.</p>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Encrypt & Sync</h3>
+            <p>Drop files into your vault. Encrypz chunks and encrypts files locally before streaming directly to your
+              cloud.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Security Model -->
-  <section id="security" class="section">
+  <!-- Security Model (Terminal Mockup) -->
+  <section class="section" id="security">
     <div class="container">
-      <div class="security-banner shadow-card fade-in-up">
-        <div class="security-banner-content">
-          <h2 class="security-title">Open Source & Client-Side Verification</h2>
-          <p class="security-text">
-            Trust is earned, not given. Encrypz stores <strong>zero data</strong> on our servers. Our core cryptographic
-            engine is fully open-source for community auditing, and all security operations rely exclusively on standard
-            Web Crypto API primitives provided directly by your browser.
-          </p>
-          <div class="security-badges">
-            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg> Web Crypto API</span>
-            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                </path>
-                <path d="M9 18c-4.51 2-5-2-7-2"></path>
-              </svg> Open Source</span>
-            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg> No Trackers</span>
+      <div class="terminal-mockup">
+        <div class="terminal-header">
+          <div class="mac-btns">
+            <span></span><span></span><span></span>
           </div>
+          <div class="terminal-title">core-crypto.js</div>
         </div>
+        <div class="terminal-body">
+          <pre><code>
+<span class="comment">// Open Source & Client-Side Verification</span>
+<span class="keyword">const</span> <span class="function">encryptFile</span> = <span class="keyword">async</span> (file, masterKey) => {
+  <span class="keyword">const</span> iv = crypto.getRandomValues(<span class="keyword">new</span> <span class="type">Uint8Array</span>(12));
+  <span class="keyword">const</span> key = <span class="keyword">await</span> deriveKey(masterKey, salt);
+  
+  <span class="comment">// 100% Web Crypto API</span>
+  <span class="keyword">const</span> ciphertext = <span class="keyword">await</span> crypto.subtle.encrypt(
+    { name: <span class="string">"AES-GCM"</span>, iv },
+    key,
+    file.buffer
+  );
+
+  <span class="keyword">return</span> ciphertext;
+};
+          </code></pre>
+        </div>
+      </div>
+      <div class="security-badges-container">
+        <span class="badge">Web Crypto API</span>
+        <span class="badge">Open Source</span>
+        <span class="badge">No Trackers</span>
       </div>
     </div>
   </section>
 
-  <!-- Waitlist Section -->
-  <section id="waitlist" class="section bg-light">
-    <div class="container waitlist-container fade-in-up">
-      <h2 class="waitlist-title">Take Back Control of Your Digital Privacy</h2>
-      <p class="waitlist-text">
-        Encrypz is launching soon. Secure your early access spot and be the first to experience true zero-knowledge
-        cloud encryption.
-      </p>
-      <form class="waitlist-form large" id="footer-waitlist">
-        <input type="email" placeholder="Enter your email address" required class="form-input" />
-        <button type="submit" class="btn btn-primary btn-large">Claim Early Access</button>
-      </form>
+  <!-- CTA -->
+  <section id="vault" class="section cta-section">
+    <div class="container text-center">
+      <h2 class="section-title">Access Your Secure Vault</h2>
+      <p class="section-desc mx-auto" style="max-width: 600px; margin-bottom: 2rem;">Your files, secured by
+        zero-knowledge encryption. Start managing your private data instantly.</p>
+      <div>
+        <a href="#" class="btn-primary">Open Web Vault</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          <path d="m9 12 2 2 4-4"></path>
-        </svg>
-        <span class="logo-text">Encrypz</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+            style="height: 32px; width: auto; border-radius: 4px;" />
+          <span class="logo-text">Encrypz</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/encrypz/" target="_blank">GitHub</a>
+          <a href="/about.html">About Us</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
       </div>
-      <p class="copyright">Copyright &copy; 2026 Encrypz. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://github.com/encrypz/" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact</a>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 Encrypz. All rights reserved.</p>
       </div>
     </div>
   </footer>

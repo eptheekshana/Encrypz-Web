@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <title>About Us - Encrypz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+  <style>
+    .page-content {
+      padding: 10rem 0 6rem 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .page-content h1 {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+    .page-content h2 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .page-content p {
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating Nav -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="/" class="logo">
+        <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+          style="height: 32px; width: auto; border-radius: 4px;" />
+        <span class="logo-text">Encrypz</span>
+      </a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#security">Security</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#" class="nav-login">Log In</a>
+        <a href="#" class="btn-glow">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-content container">
+    <h1 class="text-gradient">About Us</h1>
+    
+    <h2>Our Mission</h2>
+    <p>At Encrypz, we believe that privacy is a fundamental human right. In an era where data is commodified and mass surveillance is commonplace, we set out to build tools that give control back to the users.</p>
+
+    <h2>The Problem with the Cloud</h2>
+    <p>Cloud storage is incredibly convenient, but it requires you to trust a third party with your most sensitive information. We realized that the only way to truly secure data in the cloud is to ensure it is encrypted *before* it leaves your device.</p>
+    
+    <h2>Our Approach</h2>
+    <p>We built Encrypz to be seamless, requiring no complicated desktop installations. By leveraging modern Web Crypto APIs, we've created a powerful encryption engine that runs entirely in your browser. You bring your own storage, and we provide the lock and key.</p>
+    
+    <h2>Open Source</h2>
+    <p>Trust is earned through transparency. That's why our core cryptographic implementation is open source. We invite the community to audit our code and contribute to a more secure future for everyone.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+            style="height: 32px; width: auto; border-radius: 4px;" />
+          <span class="logo-text">Encrypz</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/encrypz/" target="_blank">GitHub</a>
+          <a href="/about.html">About Us</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 Encrypz. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

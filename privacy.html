@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <title>Privacy Policy - Encrypz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+  <style>
+    .page-content {
+      padding: 10rem 0 6rem 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .page-content h1 {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    .page-content h2 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .page-content p {
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating Nav -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="/" class="logo">
+        <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+          style="height: 32px; width: auto; border-radius: 4px;" />
+        <span class="logo-text">Encrypz</span>
+      </a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#security">Security</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#" class="nav-login">Log In</a>
+        <a href="#" class="btn-glow">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-content container">
+    <h1 class="text-gradient">Privacy Policy</h1>
+
+    <h2>1. Zero-Knowledge Architecture</h2>
+    <p>Encrypz is built from the ground up on a zero-knowledge architecture. This means that all encryption and
+      decryption processes happen entirely within your local web browser. We never transmit, store, or have access to
+      your master password or the unencrypted contents of your files.</p>
+
+    <h2>2. Data Collection</h2>
+    <p>We believe in collecting the absolute minimum amount of data required to provide our service. We do not track
+      your IP address, use tracking cookies, or employ third-party analytics software that compromises your privacy.</p>
+
+    <h2>3. Cloud Providers</h2>
+    <p>When you connect Encrypz to a third-party cloud provider (like Google Drive or OneDrive), the authorization token
+      is stored locally on your device. We do not proxy your files through our servers; your encrypted data streams
+      directly between your browser and your cloud provider.</p>
+
+    <h2>4. Open Source Transparency</h2>
+    <p>Our cryptographic core is completely open-source. We encourage security researchers and our users to audit our
+      code to independently verify our privacy claims.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Encrypz Logo" class="logo-icon"
+            style="height: 32px; width: auto; border-radius: 4px;" />
+          <span class="logo-text">Encrypz</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/encrypz/" target="_blank">GitHub</a>
+          <a href="/about.html">About Us</a>
+          <a href="/contact.html">Contact Us</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 Encrypz. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
