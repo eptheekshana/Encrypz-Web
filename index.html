@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encrypz | Your Cloud. Your Keys. Zero Compromise.</title>
+  <meta name="description"
+    content="Encrypz is a zero-knowledge encryption vault that secures your files inside your browser before they ever touch the cloud." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        <span class="logo-text">Encrypz</span>
+      </a>
+      <div class="nav-links">
+        <a href="#problem">The Problem</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#security">Security Model</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero section">
+    <div class="hero-bg-elements">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="hero-grid-overlay"></div>
+    </div>
+    <div class="container hero-container relative-z">
+      <h1 class="hero-title fade-in-up">Your Cloud.<br /><span>Your Keys.</span><br />Zero Compromise.</h1>
+      <p class="hero-subtitle fade-in-up" style="animation-delay: 0.1s;">
+        Encrypz is a zero-knowledge encryption vault that secures your files inside your browser before they ever
+        touch the cloud. Keep using Google Drive and OneDrive without sacrificing your privacy.
+      </p>
+
+      <div class="hero-form fade-in-up" style="animation-delay: 0.4s;">
+        <form class="waitlist-form" id="hero-waitlist">
+          <input type="email" placeholder="Enter your email address" required class="form-input" />
+          <button type="submit" class="btn btn-primary">Get Early Access</button>
+        </form>
+        <p class="waitlist-subtext">Join privacy-conscious users on the waitlist. Zero spam.</p>
+      </div>
+
+      <div class="hero-visual fade-in-up" style="animation-delay: 0.2s;">
+        <div class="encryption-anim-wrapper">
+          <div class="anim-scene">
+            <div class="anim-path"></div>
+
+            <div class="anim-cloud">
+              <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+            </div>
+
+            <div class="anim-lock">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+
+            <div class="anim-file">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="anim-cipher">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- The Problem Section -->
+  <section id="problem" class="section bg-light">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Cloud Storage is Convenient. <span>It Isn't Private.</span></h2>
+        <p class="section-description">Traditional cloud storage leaves your most sensitive data vulnerable to scanning,
+          breaches, and third-party access.</p>
+      </div>
+
+      <div class="grid-3 problem-grid">
+        <div class="card shadow-card fade-in-up" style="animation-delay: 0.1s;">
+          <div class="card-icon warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+              </path>
+            </svg>
+          </div>
+          <h3 class="card-title">They Hold the Keys</h3>
+          <p class="card-text">Cloud providers encrypt your data on their servers, meaning they hold the decryption keys
+            and can scan, analyze, or hand over your files at any time.</p>
+        </div>
+
+        <div class="card shadow-card fade-in-up" style="animation-delay: 0.2s;">
+          <div class="card-icon warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m15 9-6 6"></path>
+              <path d="m9 9 6 6"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Centralized Breaches</h3>
+          <p class="card-text">When cloud servers are breached, your plaintext data is compromised. Relying on
+            provider-side security creates a massive single point of failure.</p>
+        </div>
+
+        <div class="card shadow-card fade-in-up" style="animation-delay: 0.3s;">
+          <div class="card-icon warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+              <path d="M8 12h8"></path>
+              <path d="M12 8v8"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Complex, Clunky Tools</h3>
+          <p class="card-text">Traditional encryption software requires heavy desktop installs, complicated key
+            management, or forcing you to move away from your existing cloud ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition Section -->
+  <section id="value-prop" class="section">
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div class="fade-in-up">
+          <h2 class="section-title">Your Privacy, <span>Guaranteed.</span></h2>
+          <p class="section-description" style="text-align: left; margin-bottom: 2.5rem; max-width: 100%;">
+            Encrypz bridges the gap between the convenience of modern cloud storage and the absolute security of local
+            cryptography.
+          </p>
+
+          <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">What We Do For You</h3>
+            <p>We seamlessly encrypt your files inside your browser <strong>before</strong> they are ever uploaded to
+              your cloud provider. You get a secure, organized vault without needing to install complex desktop
+              software.</p>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-dark);">Why It Matters</h3>
+            <p>Cloud breaches and unauthorized data scanning happen every day. By encrypting your data locally, even if
+              your cloud provider is completely compromised, your files remain mathematically unreadable to hackers,
+              corporations, and governments.</p>
+          </div>
+        </div>
+
+        <div class="fade-in-up" style="animation-delay: 0.2s;">
+          <div class="shadow-card"
+            style="background-color: var(--bg-color-alt); text-align: center; padding: 3rem 2rem;">
+            <div
+              style="width: 80px; height: 80px; background: #FFFFFF; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: var(--shadow-sm);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M8 11a4 4 0 1 1 8 0c0 1.57-.88 3-2 4"></path>
+                <path d="M12 15v2"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">The Zero-Trust Model</h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem;">In a zero-trust architecture, you don't need to
+              trust the cloud provider, the network, or even us. You only need to trust the math.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features Section -->
+  <section id="features" class="section bg-light">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Security That <span>Never Leaves Your Device</span></h2>
+        <p class="section-description">Advanced cryptography executed entirely within your browser, putting you in
+          absolute control.</p>
+      </div>
+
+      <div class="grid-2 features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-item fade-in-up">
+          <div class="feature-icon primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+              <path d="M8.5 8.5v.01"></path>
+              <path d="M16 15.5v.01"></path>
+              <path d="M12 12v.01"></path>
+              <path d="M11 17v.01"></path>
+              <path d="M7 14v.01"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">100% Zero-Knowledge</h3>
+            <p class="feature-text">We never see your password, keys, or files. Cryptographic execution happens entirely
+              on your local machine, in-browser.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-item fade-in-up" style="animation-delay: 0.1s;">
+          <div class="feature-icon success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">AES-256-GCM Encryption</h3>
+            <p class="feature-text">Dynamic in-memory encryption that protects data confidentiality and instantly
+              detects tampering through authenticated encryption.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-item fade-in-up" style="animation-delay: 0.2s;">
+          <div class="feature-icon primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+              </path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Argon2id Key Derivation</h3>
+            <p class="feature-text">Computational passphrase stretching that transforms simple master passwords into
+              uncrackable cryptographic keys resisting GPU attacks.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-item fade-in-up" style="animation-delay: 0.3s;">
+          <div class="feature-icon success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Native Cloud Integration</h3>
+            <p class="feature-text">Direct OAuth integration with Google Drive and OneDrive without middleman backend
+              servers reading your data in transit.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-item fade-in-up" style="animation-delay: 0.4s;">
+          <div class="feature-icon primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 16 12 12 8 16"></polyline>
+              <line x1="12" x2="12" y1="12" y2="21"></line>
+              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+              <polyline points="16 16 12 12 8 16"></polyline>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Large File Streaming</h3>
+            <p class="feature-text">Powered by the Web Streams API to encrypt gigabyte-sized files smoothly in browser
+              memory without crashing or lagging.</p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-item fade-in-up" style="animation-delay: 0.5s;">
+          <div class="feature-icon success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" x2="22" y1="12" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Zero Downloads Required</h3>
+            <p class="feature-text">Fully browser-based. Access your encrypted vault instantly from any modern web
+              browser without installing any heavy desktop clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section bg-light">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Effortless Privacy in <span>Three Simple Steps</span></h2>
+        <p class="section-description">We handle the complex cryptography so you can focus on getting work done.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-line"></div>
+
+        <!-- Step 1 -->
+        <div class="step-item fade-in-up">
+          <div class="step-number">1</div>
+          <div class="step-content shadow-card">
+            <h3 class="step-title">Connect</h3>
+            <p class="step-text">Authenticate directly with your cloud provider (e.g., Google Drive) via secure OAuth
+              2.0. No middleman involved.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-item fade-in-up" style="animation-delay: 0.2s;">
+          <div class="step-number">2</div>
+          <div class="step-content shadow-card">
+            <h3 class="step-title">Lock</h3>
+            <p class="step-text">Set your master password. Encrypz derives your local keys using Argon2id in a
+              background Web Worker, ensuring main thread performance.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-item fade-in-up" style="animation-delay: 0.4s;">
+          <div class="step-number">3</div>
+          <div class="step-content shadow-card highlight-border">
+            <h3 class="step-title">Encrypt & Sync</h3>
+            <p class="step-text">Drop files into your vault. Encrypz chunks, encrypts, and obfuscates filenames locally
+              before streaming ciphertext directly to your cloud.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Model -->
+  <section id="security" class="section">
+    <div class="container">
+      <div class="security-banner shadow-card fade-in-up">
+        <div class="security-banner-content">
+          <h2 class="security-title">Open Source & Client-Side Verification</h2>
+          <p class="security-text">
+            Trust is earned, not given. Encrypz stores <strong>zero data</strong> on our servers. Our core cryptographic
+            engine is fully open-source for community auditing, and all security operations rely exclusively on standard
+            Web Crypto API primitives provided directly by your browser.
+          </p>
+          <div class="security-badges">
+            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg> Web Crypto API</span>
+            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                </path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg> Open Source</span>
+            <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg> No Trackers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist Section -->
+  <section id="waitlist" class="section bg-light">
+    <div class="container waitlist-container fade-in-up">
+      <h2 class="waitlist-title">Take Back Control of Your Digital Privacy</h2>
+      <p class="waitlist-text">
+        Encrypz is launching soon. Secure your early access spot and be the first to experience true zero-knowledge
+        cloud encryption.
+      </p>
+      <form class="waitlist-form large" id="footer-waitlist">
+        <input type="email" placeholder="Enter your email address" required class="form-input" />
+        <button type="submit" class="btn btn-primary btn-large">Claim Early Access</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        <span class="logo-text">Encrypz</span>
+      </div>
+      <p class="copyright">Copyright &copy; 2026 Encrypz. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/encrypz/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
