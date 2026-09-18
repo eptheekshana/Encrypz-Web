@@ -76,9 +76,12 @@ a {
   width: 90%;
   max-width: 800px;
   z-index: 100;
-  background-color: var(--bg-color-alt);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
+  background-color: rgba(2, 13, 28, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -112,11 +115,14 @@ a {
   color: var(--text-muted);
   font-size: 0.875rem;
   font-weight: 500;
-  transition: color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: var(--text-light);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .nav-actions {
@@ -137,7 +143,7 @@ a {
   background: var(--primary);
   color: var(--text-light);
   padding: 0.5rem 1.25rem;
-  border-radius: var(--border-radius);
+  border-radius: 100px;
   border: 1px solid var(--primary);
   box-shadow: var(--shadow-sm);
   font-size: 0.875rem;
@@ -239,11 +245,17 @@ a {
 }
 
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--primary);
   color: var(--text-light);
   padding: 1rem 2rem;
-  border-radius: var(--border-radius);
+  border-radius: 100px;
   font-weight: 600;
+  border: 1px solid transparent;
+  min-width: 180px;
+  box-sizing: border-box;
   white-space: nowrap;
   transition: all 0.2s;
 }
@@ -254,19 +266,27 @@ a {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-light);
   padding: 1rem 2rem;
-  border-radius: var(--border-radius);
+  border-radius: 100px;
   font-weight: 600;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 180px;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   white-space: nowrap;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 767px) {
