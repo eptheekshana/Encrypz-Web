@@ -71,22 +71,90 @@
 
   <section class="page-content container">
     <h1 class="text-gradient">Privacy Policy</h1>
+    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2rem;"><strong>Last Updated:</strong> October 2026 &bull; Package: <code>com.encrypz.vault</code></p>
 
-    <h2>1. Zero-Knowledge Architecture</h2>
-    <p>Encrypz is built from the ground up on a zero-knowledge architecture. This means that all encryption and
-      decryption processes happen entirely within your local web browser. We never transmit, store, or have access to
-      your master password or the unencrypted contents of your files.</p>
+    <h2>1. Zero-Knowledge Architecture & Native Device Encryption</h2>
+    <p>Encrypz is engineered on a zero-knowledge architecture. All cryptographic encryption and decryption operations occur locally on your Android device using native cryptographic APIs (Java/Android native crypto). Files are encrypted locally using AES-256-GCM, and cryptographic keys are derived using PBKDF2-HMAC-SHA256 (600,000 iterations for new accounts). Encryption does not run in a browser; it runs entirely within the native mobile sandbox before data ever leaves your hardware.</p>
 
-    <h2>2. Data Collection</h2>
-    <p>We believe in collecting the absolute minimum amount of data required to provide our service. We do not track
-      your IP address, use tracking cookies, or employ third-party analytics software that compromises your privacy.</p>
+    <h2>2. Backend Services & Data Stored in MongoDB</h2>
+    <p>While encrypted file storage is handled directly by your personal cloud provider (Google Drive), account registration, session authentication, and encrypted vault state synchronization require our dedicated .NET backend service and MongoDB database.</p>
+    <p>We believe in absolute transparency regarding what information is stored on our servers versus what never leaves your device:</p>
 
-    <h2>3. Cloud Providers</h2>
-    <p>Encrypz currently supports Google Drive integration via official secure OAuth 2.0 (with support for other cloud providers coming soon). The authorization token is stored locally on your device or session. We do not proxy your files through our servers; your encrypted data streams directly between your device and Google Drive without middleman access.</p>
+    <div class="data-disclosure-grid">
+      <!-- Stored in MongoDB -->
+      <div class="data-disclosure-card stored">
+        <div class="disclosure-card-header">
+          <h3>Stored in MongoDB</h3>
+          <span class="disclosure-badge badge-stored">Backend Storage</span>
+        </div>
+        <ul class="disclosure-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div><strong>Google Identity:</strong> OAuth identifier and basic profile details used solely for federated authentication and account sign-in.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div><strong>Email Address:</strong> Account identifier used for login verification and essential security notifications.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div><strong>Password-Proof Hashes:</strong> Client-derived verifier hashes used to prove password ownership upon login without transmitting or exposing your actual password.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div><strong>Cryptographic Salts:</strong> High-entropy randomized salts generated for your account and utilized in PBKDF2 key derivation.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div><strong>Encrypted Vault Key:</strong> Your master vault key, encrypted locally on your Android device before upload. It is stored as ciphertext; our servers cannot decrypt or read it.</div>
+          </li>
+        </ul>
+      </div>
 
-    <h2>4. Open Source Transparency</h2>
-    <p>Our cryptographic core is completely open-source. We encourage security researchers and our users to audit our
-      code to independently verify our privacy claims.</p>
+      <!-- NEVER Stored in MongoDB -->
+      <div class="data-disclosure-card never-stored">
+        <div class="disclosure-card-header">
+          <h3>NEVER Stored in MongoDB</h3>
+          <span class="disclosure-badge badge-never">Zero Access</span>
+        </div>
+        <ul class="disclosure-list">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <div><strong>Plaintext Passwords / PINs:</strong> Your master password and six-digit PIN never touch our network in unhashed/plaintext form.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <div><strong>File Contents:</strong> Unencrypted files, photos, videos, and documents are never sent to, proxied by, or stored in our MongoDB backend.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <div><strong>Plaintext Filenames:</strong> File and directory names are encrypted locally on your device prior to cloud transfer.</div>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            <div><strong>Decryption Keys:</strong> The keys needed to decrypt your vault key or your files exist solely in device memory during an active, unlocked vault session.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>3. Cloud Providers & Direct File Transfers</h2>
+    <p>Encrypz currently integrates with Google Drive via official Google OAuth 2.0 authorization. File uploads and downloads stream directly between your Android device and your personal Google Drive storage. Our backend servers do not relay, proxy, or inspect your file transfers. Your files are encrypted with AES-256-GCM and encrypted filenames before uploading.</p>
+
+    <h2>4. In-Memory Processing & Memory Caps</h2>
+    <p>The Android client currently reads files directly into memory for local cryptographic processing, operating with a 15 MiB file size cap. Files larger than this memory cap cannot currently be processed or may be truncated. Streaming chunked encryption for arbitrarily large files is planned for future updates.</p>
+
+    <h2>5. Vault Security: PINs, Immediate Locking & Photo Sorting</h2>
+    <p>Vault authentication is secured via a six-digit PIN or master password (biometric authentication is not currently implemented). For physical security and privacy, Encrypz implements <strong>immediate locking</strong>: whenever the app is minimized, closed, or switched away from the foreground, the vault locks instantly and memory keys are purged. In addition, the vault automatically parses media creation dates to sort encrypted photos chronologically without revealing metadata to cloud providers.</p>
+
+    <h2>6. Vault Restoration & Zero-Knowledge Responsibilities</h2>
+    <p>Because Encrypz enforces strict zero-knowledge principles, restoring your vault on a new or reset device requires two mandatory credentials: (1) your registered Google account / email, and (2) your master password or six-digit PIN. Your password-derived key is required to decrypt the vault key stored in MongoDB. <strong>If you lose your master password or PIN, Encrypz cannot recover your keys or decrypt your data.</strong></p>
+
+    <h2>7. Data Collection & Analytics</h2>
+    <p>We do not track your IP address, use tracking cookies, or bundle third-party advertising or analytics SDKs that track your usage. We collect only the minimum data necessary to maintain your account authentication.</p>
+
+    <h2>8. Open Source Transparency</h2>
+    <p>Encrypz is open-source under package name <code>com.encrypz.vault</code> on GitHub. We welcome independent security researchers and users to audit our cryptographic implementation and verify all privacy claims.</p>
   </section>
 
   <!-- Support Section -->

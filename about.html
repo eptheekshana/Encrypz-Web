@@ -77,7 +77,7 @@
     <p>Cloud storage is incredibly convenient, but it requires you to trust a third party with your most sensitive information. We realized that the only way to truly secure data in the cloud is to ensure it is encrypted *before* it leaves your device.</p>
     
     <h2>Our Approach</h2>
-    <p>We built Encrypz to be seamless, requiring no complicated desktop installations. By leveraging modern Web Crypto APIs, we've created a powerful encryption engine that runs entirely in your browser. You bring your own storage, and we provide the lock and key.</p>
+    <p>We built Encrypz to bring seamless, zero-knowledge privacy directly to mobile users. By leveraging Android's native cryptographic APIs, Encrypz executes military-grade AES-256-GCM encryption and PBKDF2-HMAC-SHA256 key derivation (600,000 iterations for new accounts) locally on your smartphone before any file touches the cloud. File transfers stream straight to your personal Google Drive, while our secure .NET and MongoDB backend coordinates account registration and encrypted vault state without ever seeing your plaintext password, keys, or file data.</p>
     
     <h2>Open Source</h2>
     <p>Trust is earned through transparency. That's why our core cryptographic implementation is open source. We invite the community to audit our code and contribute to a more secure future for everyone.</p>

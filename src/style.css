@@ -1081,3 +1081,212 @@ a {
     transform: translateY(0);
   }
 }
+
+/* Restoration Requirements Card */
+.restoration-box {
+  max-width: 1160px;
+  margin: 2rem auto 0;
+  background: var(--bg-color-alt);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2.25rem;
+  text-align: left;
+}
+
+.restoration-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.restoration-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius);
+  background: var(--secondary);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.restoration-box h4 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.restoration-box .restoration-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.restoration-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .restoration-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.restoration-item {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.restoration-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.restoration-item h5 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+.restoration-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.restoration-warning {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #fca5a5;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.restoration-warning svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  color: #ef4444;
+}
+
+/* Privacy Data Disclosure Cards */
+.data-disclosure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .data-disclosure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.data-disclosure-card {
+  background: var(--bg-color-alt);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-disclosure-card.stored {
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.12);
+}
+
+.data-disclosure-card.never-stored {
+  border-color: rgba(16, 185, 129, 0.35);
+  box-shadow: 0 4px 20px -2px rgba(16, 185, 129, 0.12);
+}
+
+.disclosure-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.disclosure-card-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.disclosure-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+}
+
+.disclosure-badge.badge-stored {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.disclosure-badge.badge-never {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.disclosure-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.disclosure-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.disclosure-list li strong {
+  color: var(--text-dark);
+}
+
+.disclosure-list svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
