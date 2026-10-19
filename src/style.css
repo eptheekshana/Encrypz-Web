@@ -648,9 +648,9 @@ a {
 }
 
 .badge-upcoming {
-  background: rgba(161, 161, 170, 0.1);
-  color: #a1a1aa;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(245, 158, 11, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .status-dot {
@@ -660,6 +660,30 @@ a {
   background: #34d399;
   box-shadow: 0 0 8px #34d399;
   animation: pulseDot 2s infinite ease-in-out;
+}
+
+.dev-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+.badge-dev {
+  color: #fbbf24 !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+
+.text-amber {
+  color: #fbbf24 !important;
+}
+
+.spec-active {
+  color: #34d399 !important;
+  font-weight: 600;
 }
 
 @keyframes pulseDot {
@@ -753,6 +777,28 @@ a {
   background: rgba(255, 255, 255, 0.04);
   transform: none;
   box-shadow: none;
+}
+
+.card-footer-note {
+  margin-top: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.card-footer-note a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.card-footer-note a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
 }
 
 /* Quick Terminal Install Snippet */
@@ -913,6 +959,61 @@ a {
   font-size: 0.75rem;
   color: #93c5fd;
   word-break: break-all;
+}
+
+.guide-step p code {
+  display: inline;
+  padding: 0.15rem 0.4rem;
+  vertical-align: middle;
+}
+
+.desktop-releases-notice {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .desktop-releases-notice {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+.notice-badge {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.desktop-releases-notice p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  line-height: 1.55;
+}
+
+.desktop-releases-notice a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.desktop-releases-notice a:hover {
+  color: #93c5fd;
 }
 
 .cta-section {

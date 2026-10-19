@@ -301,16 +301,90 @@
     <div class="container">
       <div class="section-heading">
         <h2 class="section-title">Get Encrypz on <span class="text-gradient">Your Devices</span></h2>
-        <p class="section-desc">Download the Encrypz client for seamless zero-knowledge encryption on your local machine.</p>
+        <p class="section-desc">Download Encrypz for seamless zero-knowledge client-side encryption. Android is officially available now; Windows (.exe) and Linux (.deb) desktop versions are under active development and releasing soon.</p>
       </div>
 
       <div class="downloads-grid">
-        <!-- Linux (.deb) Download Card - Featured & Available -->
+        <!-- Android Download Card - Featured & Available -->
         <div class="download-card card-glow card-featured">
           <div>
             <div class="card-badge-top">
               <span class="badge-status badge-active"><span class="status-dot"></span> Available Now</span>
               <span class="badge-version">v1.0.0</span>
+            </div>
+            <div class="card-icon" style="margin-bottom: 1.25rem;">
+              <!-- Android SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5517 0 .9998.4486.9998 1.0002 0 .5517-.4481 1.0003-.9998 1.0003m-11.046 0c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5516 0 .9997.4486.9997 1.0002 0 .5517-.4481 1.0003-.9997 1.0003m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.0818 12 8.0818c-1.8535 0-3.5905.3298-5.1371.868L4.8407 5.4468a.4158.4158 0 00-.5676-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+              </svg>
+            </div>
+            <h3>Android</h3>
+            <p class="download-sub">Android 9.0+ (.apk)</p>
+            <p class="download-desc">Official mobile client featuring zero-knowledge vault management, biometric authentication, and local cryptographic operations directly on your smartphone.</p>
+
+            <div class="download-specs">
+              <div class="spec-item"><span class="spec-label">Package:</span> <span class="spec-value">encrypz-android-v1.0.0.apk</span></div>
+              <div class="spec-item"><span class="spec-label">Architecture:</span> <span class="spec-value">ARM64 / Universal</span></div>
+              <div class="spec-item"><span class="spec-label">Status:</span> <span class="spec-value spec-active">Official Release</span></div>
+              <div class="spec-item"><span class="spec-label">Target:</span> <span class="spec-value">Android 9.0+</span></div>
+            </div>
+          </div>
+
+          <div>
+            <a href="https://github.com/encrypz/Encrypz-Android/releases/download/Encrypz/encrypz-android-v1.0.0.apk" download="encrypz-android-v1.0.0.apk" class="btn-primary download-action-btn" id="btn-download-android" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download APK (v1.0.0)</span>
+            </a>
+            <div class="card-footer-note">
+              <a href="https://github.com/encrypz/Encrypz-Android/releases" target="_blank" rel="noopener noreferrer">
+                View Release on GitHub &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Windows (.exe) Download Card -->
+        <div class="download-card card-glow">
+          <div>
+            <div class="card-badge-top">
+              <span class="badge-status badge-upcoming"><span class="dev-dot"></span> In Development</span>
+              <span class="badge-version badge-dev">Releasing Soon</span>
+            </div>
+            <div class="card-icon" style="margin-bottom: 1.25rem;">
+              <!-- Windows SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3.449L9.75 2.1v9.451H0V3.449zm10.949-1.564L24 0v11.551h-13.051V1.885zM0 12.652h9.75v9.451L0 20.751v-8.099zm10.949 0H24V24l-13.051-1.885V12.652z"/>
+              </svg>
+            </div>
+            <h3>Windows</h3>
+            <p class="download-sub">Windows 10 & 11 (.exe)</p>
+            <p class="download-desc">Full-featured native desktop client tailored for Windows with system tray integration and automated background synchronization. Currently under active development.</p>
+
+            <div class="download-specs">
+              <div class="spec-item"><span class="spec-label">Format:</span> <span class="spec-value">Installer (.exe)</span></div>
+              <div class="spec-item"><span class="spec-label">Architecture:</span> <span class="spec-value">x64 (64-bit)</span></div>
+              <div class="spec-item"><span class="spec-label">Status:</span> <span class="spec-value text-amber">In Development</span></div>
+              <div class="spec-item"><span class="spec-label">Target:</span> <span class="spec-value">Windows 10 / 11</span></div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn-secondary download-action-btn download-btn-disabled" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Releasing Soon (.exe)</span>
+            </button>
+            <div class="card-footer-note">
+              <span>Windows .exe build in progress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linux (.deb) Download Card -->
+        <div class="download-card card-glow">
+          <div>
+            <div class="card-badge-top">
+              <span class="badge-status badge-upcoming"><span class="dev-dot"></span> In Development</span>
+              <span class="badge-version badge-dev">Releasing Soon</span>
             </div>
             <div class="card-icon" style="margin-bottom: 1.25rem;">
               <!-- Official Linux Tux SVG -->
@@ -320,131 +394,64 @@
             </div>
             <h3>Linux</h3>
             <p class="download-sub">Debian / Ubuntu / Mint (.deb)</p>
-            <p class="download-desc">Native standalone desktop client bundled with zero-knowledge vault engine, systemd background service, and desktop integration.</p>
+            <p class="download-desc">Native standalone desktop client bundled with zero-knowledge vault engine, systemd background daemon, and desktop integration. Currently under active development.</p>
 
             <div class="download-specs">
-              <div class="spec-item"><span class="spec-label">Package:</span> <span class="spec-value">encrypz_1.0.0_amd64.deb</span></div>
+              <div class="spec-item"><span class="spec-label">Format:</span> <span class="spec-value">Debian Package (.deb)</span></div>
               <div class="spec-item"><span class="spec-label">Architecture:</span> <span class="spec-value">x86_64 / amd64</span></div>
-              <div class="spec-item"><span class="spec-label">File Size:</span> <span class="spec-value">~115 MB</span></div>
-              <div class="spec-item"><span class="spec-label">OS Target:</span> <span class="spec-value">Debian 11+, Ubuntu 20.04+</span></div>
-            </div>
-          </div>
-
-          <div>
-            <a href="/downloads/encrypz_1.0.0_amd64.deb" download="encrypz_1.0.0_amd64.deb" class="btn-primary download-action-btn" id="btn-download-linux">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download .deb (v1.0.0)</span>
-            </a>
-
-            <div class="install-snippet">
-              <div class="snippet-header">
-                <span class="snippet-label">Terminal Quick Install</span>
-              </div>
-              <div class="terminal-command-box">
-                <code>sudo apt install ./encrypz_1.0.0_amd64.deb</code>
-                <button class="btn-copy" type="button" data-copy="sudo apt install ./encrypz_1.0.0_amd64.deb" title="Copy terminal command">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                  <span>Copy</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Windows Download Card -->
-        <div class="download-card card-glow">
-          <div>
-            <div class="card-badge-top">
-              <span class="badge-status badge-upcoming">In Development</span>
-              <span class="badge-version">v1.0.0</span>
-            </div>
-            <div class="card-icon" style="margin-bottom: 1.25rem;">
-              <!-- Windows SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M0 3.449L9.75 2.1v9.451H0V3.449zm10.949-1.564L24 0v11.551h-13.051V1.885zM0 12.652h9.75v9.451L0 20.751v-8.099zm10.949 0H24V24l-13.051-1.885V12.652z"/>
-              </svg>
-            </div>
-            <h3>Windows</h3>
-            <p class="download-sub">Windows 10 & 11 (64-bit)</p>
-            <p class="download-desc">Full-featured native desktop client tailored for Windows with system tray integration and automated background synchronization.</p>
-
-            <div class="download-specs">
-              <div class="spec-item"><span class="spec-label">Format:</span> <span class="spec-value">Installer (.exe)</span></div>
-              <div class="spec-item"><span class="spec-label">Architecture:</span> <span class="spec-value">x64 (64-bit)</span></div>
-              <div class="spec-item"><span class="spec-label">Status:</span> <span class="spec-value">Preview Pending</span></div>
-              <div class="spec-item"><span class="spec-label">Target:</span> <span class="spec-value">Windows 10 / 11</span></div>
+              <div class="spec-item"><span class="spec-label">Status:</span> <span class="spec-value text-amber">In Development</span></div>
+              <div class="spec-item"><span class="spec-label">Target:</span> <span class="spec-value">Debian 11+, Ubuntu 20.04+</span></div>
             </div>
           </div>
 
           <div>
             <button class="btn-secondary download-action-btn download-btn-disabled" disabled>
-              Coming Soon
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Releasing Soon (.deb)</span>
             </button>
-          </div>
-        </div>
-
-        <!-- Android Download Card -->
-        <div class="download-card card-glow">
-          <div>
-            <div class="card-badge-top">
-              <span class="badge-status badge-upcoming">In Development</span>
-              <span class="badge-version">v1.0.0</span>
+            <div class="card-footer-note">
+              <span>Debian .deb package in progress</span>
             </div>
-            <div class="card-icon" style="margin-bottom: 1.25rem;">
-              <!-- Android SVG -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5517 0 .9998.4486.9998 1.0002 0 .5517-.4481 1.0003-.9998 1.0003m-11.046 0c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5516 0 .9997.4486.9997 1.0002 0 .5517-.4481 1.0003-.9997 1.0003m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.0818 12 8.0818c-1.8535 0-3.5905.3298-5.1371.868L4.8407 5.4468a.4158.4158 0 00-.5676-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
-              </svg>
-            </div>
-            <h3>Android</h3>
-            <p class="download-sub">Android 9.0+ (Mobile)</p>
-            <p class="download-desc">Secure mobile companion app to decrypt and manage your encrypted vaults directly from your smartphone with biometric unlock.</p>
-
-            <div class="download-specs">
-              <div class="spec-item"><span class="spec-label">Format:</span> <span class="spec-value">APK Package</span></div>
-              <div class="spec-item"><span class="spec-label">Architecture:</span> <span class="spec-value">ARM64 / Universal</span></div>
-              <div class="spec-item"><span class="spec-label">Status:</span> <span class="spec-value">In Active Testing</span></div>
-              <div class="spec-item"><span class="spec-label">Target:</span> <span class="spec-value">Android 9.0+</span></div>
-            </div>
-          </div>
-
-          <div>
-            <button class="btn-secondary download-action-btn download-btn-disabled" disabled>
-              Coming Soon
-            </button>
           </div>
         </div>
       </div>
 
-      <!-- Linux Installation Guide Box -->
+      <!-- Android Installation Guide Box -->
       <div class="install-guide-box">
         <div class="install-guide-header">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-          <h4>How to Install on Debian, Ubuntu & Derivatives</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="color: var(--primary);">
+            <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5517 0 .9998.4486.9998 1.0002 0 .5517-.4481 1.0003-.9998 1.0003m-11.046 0c-.5511 0-.9993-.4486-.9993-1.0003 0-.5516.4482-1.0002.9993-1.0002.5516 0 .9997.4486.9997 1.0002 0 .5517-.4481 1.0003-.9997 1.0003m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.0818 12 8.0818c-1.8535 0-3.5905.3298-5.1371.868L4.8407 5.4468a.4158.4158 0 00-.5676-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+          </svg>
+          <h4>How to Install Encrypz on Android</h4>
         </div>
-        <p class="guide-intro">Follow these three quick steps to install and run Encrypz on your Linux system:</p>
+        <p class="guide-intro">Follow these three quick steps to install and start using Encrypz on your Android device:</p>
 
         <div class="guide-steps-grid">
           <div class="guide-step">
             <span class="guide-step-num">1</span>
-            <h5>Download Package</h5>
-            <p>Download the <code>.deb</code> package using the button above. Open your terminal in your download folder.</p>
-            <code>cd ~/Downloads</code>
+            <h5>Download APK</h5>
+            <p>Tap the <strong>Download APK (v1.0.0)</strong> button above to download <code>encrypz-android-v1.0.0.apk</code> directly from our official GitHub release.</p>
           </div>
 
           <div class="guide-step">
             <span class="guide-step-num">2</span>
-            <h5>Install via APT</h5>
-            <p>Run APT to install the package and automatically resolve required system runtime libraries.</p>
-            <code>sudo apt install ./encrypz_1.0.0_amd64.deb</code>
+            <h5>Allow Unknown Apps</h5>
+            <p>Open the downloaded APK file. If prompted by Android security, open Settings and toggle on <em>"Allow from this source"</em>.</p>
           </div>
 
           <div class="guide-step">
             <span class="guide-step-num">3</span>
-            <h5>Launch Encrypz</h5>
-            <p>Open Encrypz from your desktop Application Launcher, or execute from any terminal session.</p>
-            <code>encrypz</code>
+            <h5>Launch & Encrypt</h5>
+            <p>Tap <strong>Install</strong>, then launch Encrypz. Set your master password to generate local keys and start securing your files with zero knowledge.</p>
           </div>
+        </div>
+
+        <!-- Desktop Releases Development Notice Banner -->
+        <div class="desktop-releases-notice">
+          <div class="notice-badge">Desktop Editions Notice</div>
+          <p>
+            Looking for <strong>Windows (.exe)</strong> or <strong>Linux (.deb)</strong>? Both desktop versions are currently under active development and will be released soon. Follow the official <a href="https://github.com/encrypz" target="_blank" rel="noopener noreferrer">Encrypz GitHub organization</a> for release announcements.
+          </p>
         </div>
       </div>
 
